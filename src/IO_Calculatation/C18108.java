@@ -1,0 +1,12 @@
+package IO_Calculatation;
+
+import java.util.Scanner;
+
+public class C18108 {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        int a = scanner.nextInt();
+        System.out.println(a - 543);
+        scanner.close();
+    }
+}
