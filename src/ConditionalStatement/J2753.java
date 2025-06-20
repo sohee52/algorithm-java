@@ -2,7 +2,7 @@ package ConditionalStatement;
 
 import java.util.Scanner;
 
-public class C2753 {
+public class J2753 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         int year = scanner.nextInt();
