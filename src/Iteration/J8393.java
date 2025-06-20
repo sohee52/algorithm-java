@@ -2,13 +2,15 @@ package Iteration;
 
 import java.util.Scanner;
 
-public class J2739 {
+public class J8393 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         int a = scanner.nextInt();
-        scanner.close();
-        for (int i = 1; i < 10; i++) {
-            System.out.println(a + " * " + i + " = " + (a * i));
+        int sum = 0;
+        for (int i = 1; i <= a; i++) {
+            sum += i;
         }
+        System.out.println(sum);
+        scanner.close();
     }
 }

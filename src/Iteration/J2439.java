@@ -1,16 +1,17 @@
+package Iteration;
+
 import java.io.*;
 
-public class Main {
+public class J2439 {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
 
-        String input;
-        while ((input = br.readLine()) != null) {
-            String[] parts = input.split(" ");
-            int a = Integer.parseInt(parts[0]);
-            int b = Integer.parseInt(parts[1]);
-            bw.write(a + b + "\n");
+        int n = Integer.parseInt(br.readLine());
+
+        for (int i = 1; i <= n; i++) {
+            bw.write(" ".repeat(n - i));
+            bw.write("*".repeat(i) + "\n");
         }
 
         bw.flush();
