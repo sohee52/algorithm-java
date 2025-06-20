@@ -2,12 +2,16 @@ package IO_Calculatation;
 
 import java.util.Scanner;
 
-public class C10998 {
+public class J10430 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         int a = scanner.nextInt();
         int b = scanner.nextInt();
-        System.out.println(a * b);
+        int c = scanner.nextInt();
+        System.out.println((a+b)%c);
+        System.out.println(((a%c)+(b%c))%c);
+        System.out.println((a*b)%c);
+        System.out.println(((a%c)*(b%c))%c);
         scanner.close();
     }
 }

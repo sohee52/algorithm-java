@@ -1,6 +1,6 @@
 package IO_Calculatation;
 
-public class C10172 {
+public class J10172 {
     public static void main(String[] args) {
         System.out.println("|\\_/|");
         System.out.println("|q p|   /}");

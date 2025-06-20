@@ -2,7 +2,7 @@ package IO_Calculatation;
 
 import java.util.Scanner;
 
-public class C2588 {
+public class J2588 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         int a = scanner.nextInt();
