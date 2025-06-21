@@ -1,4 +1,4 @@
-package OneDimensionalArray;
+package oneDimensionalArray;
 
 import java.io.*;
 import java.util.HashSet;

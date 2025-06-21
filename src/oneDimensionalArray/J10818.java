@@ -1,8 +1,8 @@
-package OneDimensionalArray;
+package oneDimensionalArray;
 
 import java.io.*;
 
-public class J10807 {
+public class J10818 {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
@@ -15,16 +15,16 @@ public class J10807 {
             arr[i] = Integer.parseInt(strArr[i]);
         }
 
-        int v = Integer.parseInt(br.readLine());
-        int count = 0;
+        int min = Integer.MAX_VALUE;
+        int max = Integer.MIN_VALUE;
 
-        for (int i = 0; i < n; i++) {
-            if (v == arr[i]) {
-                count++;
-            }
+        for (int i : arr) {
+            min = Math.min(min, i);
+            max = Math.max(max, i);
         }
 
-        bw.write(String.valueOf(count));
+        bw.write(String.valueOf(min) + " ");
+        bw.write(String.valueOf(max));
         bw.flush();
         br.close();
         bw.close();
