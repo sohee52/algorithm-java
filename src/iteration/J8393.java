@@ -1,16 +1,16 @@
-package Iteration;
+package iteration;
 
 import java.util.Scanner;
 
-public class J10950 {
+public class J8393 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         int a = scanner.nextInt();
-        for (int i = 0; i < a; i++) {
-            int m = scanner.nextInt();
-            int n = scanner.nextInt();
-            System.out.println(m+n);
+        int sum = 0;
+        for (int i = 1; i <= a; i++) {
+            sum += i;
         }
+        System.out.println(sum);
         scanner.close();
     }
 }
