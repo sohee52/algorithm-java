@@ -1,4 +1,4 @@
-package IO_Calculatation;
+package ioCalculatation;
 
 public class J10171 {
     public static void main(String[] args) {

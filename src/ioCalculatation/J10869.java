@@ -1,4 +1,4 @@
-package IO_Calculatation;
+package ioCalculatation;
 
 import java.util.Scanner;
 

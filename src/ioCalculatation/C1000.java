@@ -1,12 +1,13 @@
-package IO_Calculatation;
+package ioCalculatation;
 
 import java.util.Scanner;
 
-public class J10926 {
+public class C1000 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        String a = scanner.nextLine();
-        System.out.println(a + "??!");
+        int a = scanner.nextInt();
+        int b = scanner.nextInt();
+        System.out.println(a+b);
         scanner.close();
     }
 }
