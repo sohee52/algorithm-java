@@ -1,17 +1,18 @@
-package SString;
+package sString;
 
 import java.io.*;
 
-public class J2743 {
+public class J11654 {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
 
-        String word = br.readLine();
+        String input = br.readLine();
+        char a = input.charAt(0);
+        int ascii = (int) a;
 
-        bw.write(String.valueOf(word.length()));
+        bw.write(String.valueOf(ascii));
         bw.flush();
-        bw.newLine();
         br.close();
         bw.close();
     }
