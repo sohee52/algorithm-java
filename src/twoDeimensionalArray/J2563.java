@@ -1,21 +1,25 @@
-import java.io.*;
+package twoDeimensionalArray;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
-public class Main {
+public class J2563 {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
         boolean[][] paper = new boolean[100][100];
-        int totalArea = 0;
         int n = Integer.parseInt(br.readLine());
+        int totalArea = 0;
 
         for (int i = 0; i < n; i++) {
             StringTokenizer st = new StringTokenizer(br.readLine());
-            int a = Integer.parseInt(st.nextToken());
-            int b = Integer.parseInt(st.nextToken());
+            int x = Integer.parseInt(st.nextToken());
+            int y = Integer.parseInt(st.nextToken());
 
-            for (int row = a; row < a+10; row++) {
-                for (int col = b; col < b+10; col++) {
+            for (int row = y; row < y + 10; row++) {
+                for (int col = x; col < x + 10; col++) {
                     if (!paper[row][col]) {
                         paper[row][col] = true;
                         totalArea++;
